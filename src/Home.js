@@ -68,7 +68,7 @@ const Home = ({ fareCharges }) => {
 
 	// Check Tube fair
 	const checkTubeFair = (enterStation, exitStation) => {
-		if (!enterStation) {
+		if (!enterStation.length) {
 			return;
 		}
 
@@ -101,6 +101,7 @@ const Home = ({ fareCharges }) => {
 	// clearing exit (Error clearing)
 	const clearExit = () => {
 		setselectedTravelFrom([]);
+		setselectedTravelTo([]);
 	};
 
 	// checking total travel cost (from - to)
@@ -108,17 +109,19 @@ const Home = ({ fareCharges }) => {
 		//Same Zone else zone change
 		if (selectedTravelFrom[0] === selectedTravelTo[0]) {
 			// anywhere in zone 1
-			selectedTravelFrom.includes("1") &&
+			if(selectedTravelFrom.includes("1")) {
 				setMemoWallet((state) =>
 					(state - fareCharges.ANYWHERE_IN_ZONE_1).toFixed(2)
 				);
+            }
 
 			// anywhere in zone 2 and 3
-			(selectedTravelFrom.includes("2") ||
-				selectedTravelFrom.includes("3")) &&
-				setMemoWallet((state) =>
-					(state - fareCharges.ANY_ONE_ZONE_OUTSIDE_ZONE_1).toFixed(2)
-				);
+			if((selectedTravelFrom.includes("2") ||
+				selectedTravelFrom.includes("3")) ) {
+                    setMemoWallet((state) =>
+                        (state - fareCharges.ANY_ONE_ZONE_OUTSIDE_ZONE_1).toFixed(2)
+                    );
+                }
 		} else {
 			// if 'Earl’s Court'
 			if (
