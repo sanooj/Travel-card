@@ -33,12 +33,16 @@ const Home = ({ fareCharges }) => {
 
 	// topup amount
 	const topUp = () => {
-		const topupValue = parseInt(topupInput.current.value, 10);
-		if (!topupValue) {
-			return;
-		}
-		setWallet((state) => state + topupValue);
-		setMemoWallet((state) => state + topupValue);
+        let topupValue = 0;
+        if(topupInput.current && topupInput.current.value) {
+           topupValue = parseInt(topupInput.current.value, 10);
+        }
+            if (!topupValue) {
+                return;
+            }
+            setWallet((state) => state + topupValue);
+            setMemoWallet((state) => state + topupValue);
+        
 	};
 
 	// changing travel type
@@ -48,14 +52,18 @@ const Home = ({ fareCharges }) => {
 
 	// Enter Start station
 	const enterStation = () => {
-		setselectedTravelFrom(
-			(state) => (state = [...travelFrom.current.value])
-		);
+        if(travelFrom.current && travelFrom.current.value) {
+            setselectedTravelFrom(
+                (state) => (state = [...travelFrom.current.value])
+            );
+        }
 	};
 
 	// Enter exit station
 	const exitStation = () => {
+        if(travelTo.current && travelTo.current.value) {
 		setselectedTravelTo((state) => (state = [...travelTo.current.value]));
+        }
 	};
 
 	// Check Tube fair
@@ -194,7 +202,8 @@ const Home = ({ fareCharges }) => {
 					<button
 						onClick={topUp}
 						className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-					>
+                        id="topup"
+                        >
 						Topup
 					</button>
 				</div>
@@ -240,7 +249,8 @@ const Home = ({ fareCharges }) => {
 						<button
 							onClick={enterStation}
 							className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-						>
+                            id="startStationButton"
+                            >
 							Enter Station
 						</button>
 					</div>
@@ -267,14 +277,16 @@ const Home = ({ fareCharges }) => {
 						<button
 							onClick={exitStation}
 							className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-						>
+                            id="endStationButton"
+                            >
 							Exit Station
 						</button>
 					</div>
 					<button
 						onClick={clearExit}
 						className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-					>
+                        id="clearButton"
+                        >
 						Clear Exit
 					</button>
 				</div>
