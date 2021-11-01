@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Home";
+import CommmonLayout from "./layout/common";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// common fare carts
+const fareCharges = {
+	ANYWHERE_IN_ZONE_1: 2.5,
+	ANY_ONE_ZONE_OUTSIDE_ZONE_1: 2.0,
+	ANY_TWO_ZONES_INCLUDING_ZONE_1: 3.0,
+	ANY_TWO_ZONES_EXCLUDING_ZONE_1: 2.25,
+	MORE_THAN_TWO_ZONES: 3.2,
+	BUS_JOURNEY: 1.8,
+	TUBE_MAX_COST: 3.2,
+};
+const App = () => {
+	return (
+		<CommmonLayout>
+			<Home fareCharges={fareCharges} />
+		</CommmonLayout>
+	);
+};
 
 export default App;

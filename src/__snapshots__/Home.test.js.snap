@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render my component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex1 justify-between bg-gray-50 mb-6 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider overflow-hidden border-b border-gray-200 sm:rounded-lg"
+      >
+        <div
+          class="topup text-lg"
+        >
+          <input
+            class="mr-6 border-b border-gray-200 py-2 px-4"
+            id="topup"
+            name="topup"
+            type="number"
+          />
+          <button
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Topup
+          </button>
+        </div>
+        Wallet £
+        0
+      </div>
+      <div
+        class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg min-h-full px-6 py-6"
+      >
+        <div
+          class="max-w-xl"
+        >
+          <div
+            class="flex justify-between border-b border-gray-200 py-3 mb-3"
+          >
+            <label>
+              Travel type
+            </label>
+            <div
+              class="travel-type"
+            >
+              <select
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                id="travelType"
+                name="travelType"
+              >
+                <option
+                  selected=""
+                  value="tube"
+                >
+                  Tube
+                </option>
+                <option
+                  value="bus"
+                >
+                  Bus
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="flex justify-between "
+          >
+            <label>
+              Travel From
+            </label>
+            <div
+              class="travel-from"
+            >
+              <select
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                id="travelFrom"
+                name="travelFrom"
+              >
+                <option
+                  value="1"
+                >
+                  Holborn
+                </option>
+                <option
+                  value="1"
+                >
+                  Aldgate
+                </option>
+                <option
+                  value="12"
+                >
+                  Earl’s Court
+                </option>
+                <option
+                  value="2"
+                >
+                  Hammersmith
+                </option>
+                <option
+                  value="2"
+                >
+                  Arsenal
+                </option>
+                <option
+                  value="3"
+                >
+                  Wimbledon
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="flex justify-end border-b border-gray-200 py-3 mb-3"
+          >
+            <button
+              class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Enter Station
+            </button>
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <label>
+              Travel To
+            </label>
+            <div
+              class="travel-to"
+            >
+              <select
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                id="travelTo"
+                name="travelTo"
+              >
+                <option
+                  value="1"
+                >
+                  Holborn
+                </option>
+                <option
+                  value="1"
+                >
+                  Aldgate
+                </option>
+                <option
+                  value="1,2"
+                >
+                  Earl’s Court
+                </option>
+                <option
+                  value="2"
+                >
+                  Hammersmith
+                </option>
+                <option
+                  value="2"
+                >
+                  Arsenal
+                </option>
+                <option
+                  value="3"
+                >
+                  Wimbledon
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="flex justify-end  border-b border-gray-200 py-3 mb-3"
+          >
+            <button
+              class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Exit Station
+            </button>
+          </div>
+          <button
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Clear Exit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex1 justify-between bg-gray-50 mb-6 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider overflow-hidden border-b border-gray-200 sm:rounded-lg"
+    >
+      <div
+        class="topup text-lg"
+      >
+        <input
+          class="mr-6 border-b border-gray-200 py-2 px-4"
+          id="topup"
+          name="topup"
+          type="number"
+        />
+        <button
+          class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Topup
+        </button>
+      </div>
+      Wallet £
+      0
+    </div>
+    <div
+      class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg min-h-full px-6 py-6"
+    >
+      <div
+        class="max-w-xl"
+      >
+        <div
+          class="flex justify-between border-b border-gray-200 py-3 mb-3"
+        >
+          <label>
+            Travel type
+          </label>
+          <div
+            class="travel-type"
+          >
+            <select
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              id="travelType"
+              name="travelType"
+            >
+              <option
+                selected=""
+                value="tube"
+              >
+                Tube
+              </option>
+              <option
+                value="bus"
+              >
+                Bus
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="flex justify-between "
+        >
+          <label>
+            Travel From
+          </label>
+          <div
+            class="travel-from"
+          >
+            <select
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              id="travelFrom"
+              name="travelFrom"
+            >
+              <option
+                value="1"
+              >
+                Holborn
+              </option>
+              <option
+                value="1"
+              >
+                Aldgate
+              </option>
+              <option
+                value="12"
+              >
+                Earl’s Court
+              </option>
+              <option
+                value="2"
+              >
+                Hammersmith
+              </option>
+              <option
+                value="2"
+              >
+                Arsenal
+              </option>
+              <option
+                value="3"
+              >
+                Wimbledon
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="flex justify-end border-b border-gray-200 py-3 mb-3"
+        >
+          <button
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Enter Station
+          </button>
+        </div>
+        <div
+          class="flex justify-between"
+        >
+          <label>
+            Travel To
+          </label>
+          <div
+            class="travel-to"
+          >
+            <select
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              id="travelTo"
+              name="travelTo"
+            >
+              <option
+                value="1"
+              >
+                Holborn
+              </option>
+              <option
+                value="1"
+              >
+                Aldgate
+              </option>
+              <option
+                value="1,2"
+              >
+                Earl’s Court
+              </option>
+              <option
+                value="2"
+              >
+                Hammersmith
+              </option>
+              <option
+                value="2"
+              >
+                Arsenal
+              </option>
+              <option
+                value="3"
+              >
+                Wimbledon
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="flex justify-end  border-b border-gray-200 py-3 mb-3"
+        >
+          <button
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Exit Station
+          </button>
+        </div>
+        <button
+          class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Clear Exit
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
